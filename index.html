@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive anime website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            src="assets/img/logo.png"
+            alt="no img found"
+            class="nav__logo-img"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Online Anime</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Our Process</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Plans</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <h1 class="home__title">BEST ANIME & MANGA STREAMING PLATFORM</h1>
+            <p class="home__description">
+              Welcome to TendeRx, an anime streaming platform. We believe that
+              anime is more than just a form of entertainment; it's an art form
+              that transcends boundaries and brings people together. Our
+              platform is dedicated to celebrating this artistry by offering an
+              extensive collection of anime series and films for your enjoyment.
+            </p>
+            <a href="#" class="btn">Start Free Trial</a>
+          </div>
+          <img src="assets/img/home.png" alt="no_img" class="home__img" />
+        </div>
+      </section>
+
+      <!--==================== BRAND ====================-->
+      <section class="brand">
+        <div class="swiper brand-swiper container">
+          <div class="swiper-wrapper">
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-1.png"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-2.png"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-3.png"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-4.png"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-5.png"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+            <div class="brand__item swiper-slide">
+              <img
+                src="assets/img/logo-6.webp"
+                alt="no img"
+                class="brand__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SPECIAL ANIME ====================-->
+      <section class="special__anime container section">
+        <h2 class="section__title">Watch Trailer Now</h2>
+
+        <div class="swiper anime-swiper">
+          <div class="swiper-wrapper">
+            <div class="anime__item swiper-slide">
+              <a href="links/naruto/naruto.html"
+                ><img
+                  src="assets/img/anime-12.jpg"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">Naruto: Shippuden</h3>
+                <span class="anime__detail">2007, Action</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <a href="./links/hunter/hunter.html"
+                ><img
+                  src="assets/img/anime-2.png"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">Hunter × Hunter</h3>
+                <span class="anime__detail">2011, Adventure</span>
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <a href="links/aot/aot.html">
+                <img
+                  src="assets/img/anime-3.jpg"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">Attack on Titan</h3>
+                <span class="anime__detail">2013, Action</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <a href="links/dragon/dragon.html">
+                <img
+                  src="assets/img/anime-4.png"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">Dragon Ball Z</h3>
+                <span class="anime__detail">1989, Action</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <a href="links/one/one.html">
+                <img
+                  src="assets/img/anime-8.png"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">One Piece</h3>
+                <span class="anime__detail">1997, Adventure</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <a href="links/gun/gun.html">
+                <img
+                  src="assets/img/anime-6.jpeg"
+                  alt="no img"
+                  class="anime__img"
+              /></a>
+
+              <div class="anime__data">
+                <h3 class="anime__title">Gun Sword</h3>
+                <span class="anime__detail">2005, Sci-Fi</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIPTION ====================-->
+      <section class="subscription">
+        <div class="subscription__container container grid">
+          <img
+            src="assets/img/subscription.png"
+            alt="no img"
+            class="subscription_img"
+          />
+
+          <div class="subsription__content">
+            <h2 class="section__title subscription__title">
+              1 YEAR FREE SUBSCRIPTION <br />
+              CASHBACK UPTO 50%
+            </h2>
+            <span class="subsription__date">*25TH MAY 2023</span>
+            <p class="subscription__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae tempore voluptates dolores, in dicta dignissimos eius
+              maxime qui. Ipsum expedita dolore eum delectus illo mollitia nihil
+              reprehenderit suscipit, rem debitis.
+            </p>
+            <a href="#" class="btn">Subscribe Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== POPULAR ANIME ====================-->
+      <section class="popular__anime container section">
+        <h2 class="section__title">Most Popular</h2>
+
+        <div class="swiper anime-swiper">
+          <div class="swiper-wrapper">
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-11.jpeg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Boruto: Naruto Next Generations</h3>
+                <span class="anime__detail">2017, Action</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-7.jpg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Spirited Away</h3>
+                <span class="anime__detail">2001, Fantacy</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-9.jpeg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Shinobi no Ittoki</h3>
+                <span class="anime__detail">2022, School-themed</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-6.jpeg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Gun Sword</h3>
+                <span class="anime__detail">2005, Sci-Fi</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-10.jpeg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Tower of God</h3>
+                <span class="anime__detail">2018, Adventure</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="anime__item swiper-slide">
+              <img
+                src="assets/img/anime-12.jpg"
+                alt="no img"
+                class="anime__img"
+              />
+
+              <div class="anime__data">
+                <h3 class="anime__title">Naruto: Shippuden</h3>
+                <span class="anime__detail">2007, Action</span>
+                <br />
+                <p class="fa-solid fa-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TRENDING ANIME ====================-->
+      <section class="trending__anime section">
+        <div class="anime-wrapper container">
+          <h2 class="section__title">Trending Now</h2>
+
+          <div class="swiper anime-swiper">
+            <div class="swiper-wrapper">
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-1.jpg"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">Pop Manga Mermaids</h3>
+                  <span class="anime__detail">2019, Adventure</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-4.png"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">Dragon Ball Z</h3>
+                  <span class="anime__detail">1989, Action</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-2.png"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">Hunter × Hunter</h3>
+                  <span class="anime__detail">2011, Adventure</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-13.jpg"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">Chainsaw Man English</h3>
+                  <span class="anime__detail">2018, Adventure</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-8.png"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">One Piece</h3>
+                  <span class="anime__detail">1997, Adventure</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="anime__item swiper-slide">
+                <img
+                  src="assets/img/anime-12.jpg"
+                  alt="no img"
+                  class="anime__img"
+                />
+
+                <div class="anime__data">
+                  <h3 class="anime__title">Naruto: Shippuden</h3>
+                  <span class="anime__detail">2007, Action</span>
+                  <br />
+                  <p class="fa-solid fa-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container container grid">
+        <div class="footer__content">
+          <h3 class="footer__title">News Feed</h3>
+
+          <div class="footer__anime">
+            <div class="footer__anime-item">
+              <img src="assets/img/anime-12.jpg" alt="no img" />
+
+              <div class="item__data">
+                <h4 class="item__title">
+                  Naruto: Shippuden, The most watched anime
+                </h4>
+                <span class="item__details">2007, Action</span>
+                <p class="item__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__anime-item">
+              <img src="assets/img/anime-2.png" alt="no img" />
+
+              <div class="item__data">
+                <h4 class="item__title">
+                  Hunter x Hunter, adventure at its peak in thsi anime
+                </h4>
+                <span class="item__details">2020, Adventure</span>
+                <p class="item__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__anime-item">
+              <img src="assets/img/anime-7.jpg" alt="no img" />
+
+              <div class="item__data">
+                <h4 class="item__title">
+                  Sprited Away, wins the oscar for best animated flim
+                </h4>
+                <span class="item__details">2020, Action</span>
+                <p class="item__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Latest Tweet</h3>
+
+          <div class="footer__tweet">
+            <div class="tweet__item">
+              <i class="fa-brands fa-square-twitter twitter__icon"></i>
+
+              <div class="tweet__data">
+                <h4 class="tweet__title">
+                  Anime has turened my lide upside down in a postive way, LOL
+                </h4>
+                <span class="tweet__details">Naruto_op, Jan 2023</span>
+              </div>
+            </div>
+
+            <div class="tweet__item">
+              <i class="fa-brands fa-square-twitter twitter__icon"></i>
+
+              <div class="tweet__data">
+                <h4 class="tweet__title">
+                  It's Monday morning. Make sure to go through Frieren's morning
+                  routine
+                </h4>
+                <span class="tweet__details">Anime_Lover96, Jun 2023</span>
+              </div>
+            </div>
+
+            <div class="tweet__item">
+              <i class="fa-brands fa-square-twitter twitter__icon"></i>
+
+              <div class="tweet__data">
+                <h4 class="tweet__title">
+                  Anime and manga are two vibrant and culturally significant
+                  forms of entertainment.
+                </h4>
+                <span class="tweet__details">Anime_Geek, Aug 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Instagram Feed</h3>
+
+          <div class="footer__instagram grid">
+            <img src="assets/img/anime-3.jpg" alt="no img" class="feed__img" />
+            <img src="assets/img/anime-8.png" alt="no img" class="feed__img" />
+            <img src="assets/img/anime-1.jpg" alt="no img" class="feed__img" />
+            <img src="assets/img/anime-6.jpeg" alt="no img" class="feed__img" />
+            <img src="assets/img/anime-3.jpg" alt="no img" class="feed__img" />
+            <img
+              src="assets/img/anime-10.jpeg"
+              alt="no img"
+              class="feed__img"
+            />
+            <img src="assets/img/anime-5.jpg" alt="no img" class="feed__img" />
+            <img src="assets/img/anime-9.jpeg" alt="no img" class="feed__img" />
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Upcoming Anime</h3>
+
+          <img src="assets/img/banner.png" alt="no img" class="banner__img" />
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Copyright &copy; Anime 2023</p>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

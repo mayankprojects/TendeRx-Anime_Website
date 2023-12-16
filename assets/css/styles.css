@@ -1,0 +1,534 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --hue: 228;
+  --first-color: hsl(var(--hue), 45%, 42%);
+  --title-color: #fff;
+  --text-color: hsl(var(--hue), 8%, 65%);
+  --body-color: hsl(var(--hue), 26%, 11%);
+  --container-color: hsl(var(--hue), 22%, 12%);
+  --container-color-light: hsl(var(--hue), 21%, 14%);
+  --border-color: hsl(var(--hue), 23%, 24%);
+  --black: #000;
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: "Montserrat", sans-serif;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-700: 700;
+
+  /*========== Transition ==========*/
+  --transition: ease-in-out;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--weight-700);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 4rem 3.5rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.75rem;
+}
+/*=============== HEADER & NAV ===============*/
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav {
+  height: calc(var(--header-height) + 1rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 1.75rem;
+}
+
+.nav__link {
+  color: var(--title-color);
+  transition: all 0.3s var(--transition);
+}
+
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+/* Scroll header */
+
+.scroll-header {
+  background-color: var(--black);
+}
+
+/* Active link */
+.nav__link:hover,
+.active-link {
+  color: var(--first-color);
+}
+
+/*=============== HOME ===============*/
+.home {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-block: 6rem 2rem;
+}
+
+.home__container {
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  text-transform: uppercase;
+}
+
+.home__description {
+  margin-block: 1.25rem 1.5rem;
+}
+
+/*=============== BUTTON ===============*/
+
+.btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: var(--weight-500);
+}
+
+.btn:hover {
+  background-color: hsl(228deg 58.27% 63.02%);
+  transition: all 0.3s var(--transition);
+}
+
+/*=============== BRAND ===============*/
+.brand__item {
+  background-color: var(--container-color);
+  height: 100px;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+/*=============== ANIME ===============*/
+.anime__item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.anime__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: all 0.5s var(--transition);
+}
+
+.anime__item:hover .anime__img {
+  transform: scale(1.1);
+}
+
+.anime__data {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    var(--black) 20%,
+    hsla(0, 0%, 22%, 0.04) 100%
+  );
+  width: 100%;
+  height: 124px;
+  padding: 1.5rem 1.25rem 0;
+}
+
+.anime__title {
+  font-size: var(--normal-font-size);
+}
+
+.anime__derail {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  margin-block: 0.5rem 0.75rem;
+  display: block;
+}
+
+.anime__rating {
+  font-size: var(--small-font-size);
+  color: hsl(39, 100%, 55%);
+}
+/*=============== SUBSCRIPTION ===============*/
+.subscription {
+  background-color: var(--container-color-light);
+  padding-block: 2rem;
+  height: 510px;
+  overflow: hidden;
+}
+
+.subscription__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.subscription__img {
+  justify-self: center;
+}
+
+.subscription__title,
+.subscription__date {
+  text-transform: uppercase;
+}
+
+.subscription__title {
+  margin-bottom: 1.25rem;
+}
+
+.subscription__date {
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--weight-700);
+}
+
+.subscription__description {
+  max-width: 500px;
+  margin-block: 1.25rem 1.5rem;
+}
+
+/*=============== TRENDING ANIME ===============*/
+.trending__anime {
+  background-color: var(--container-color-light);
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--container-color-light);
+}
+
+.footer__container {
+  padding-block: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+.footer__anime-item,
+.tweet__item {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer__anime-item:not(:last-child),
+.tweet__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer__anime-item img {
+  width: 96px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.item__data {
+  width: calc(100% - 7rem);
+}
+
+.item__title,
+.tweet__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-500);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.item__details,
+.tweet__details {
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+}
+
+.item__details {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.item__rating {
+  color: hsl(39, 100%, 55%);
+  font-size: var(--small-font-size);
+}
+
+.tweet__item:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.tweet__icon {
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+}
+
+.footer__instagram {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.feed__img {
+  height: 70px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__bottom {
+  background-color: var(--first-color);
+  padding-block: 1rem;
+}
+
+.footer__copyright {
+  columns: var(--title-color);
+  text-align: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .home__container {
+    grid-template-columns: 5fr 7fr;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .home__container,
+  .subscription__container {
+    grid-template-columns: 1fr;
+  }
+
+  .home__content {
+    order: 1;
+  }
+
+  .subscription {
+    height: 100%;
+  }
+
+  .subscription__description {
+    max-width: 100%;
+  }
+
+  .item__title,
+  .tweet__title {
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--title-color);
+    width: 400px;
+    height: 100%;
+    padding: 4rem 1rem;
+    transition: all 0.3s var(--transition);
+  }
+
+  .show-menu {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+
+  .nav__link,
+  .nav__close {
+    color: var(--black);
+  }
+
+  .nav__link {
+    padding: 0.75rem;
+  }
+
+  .active-link {
+    background-color: var(--first-color);
+    color: var(--title-color);
+    display: block;
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+    font: var(--h2-font-size);
+  }
+
+  .nav__toggle {
+    color: var(--title-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+  .section {
+    padding-block: 3rem;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav__menu {
+    width: 100%;
+  }
+
+  .footer__container {
+    padding-block: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .brand_logo {
+    width: 55%;
+  }
+
+  .footer__anime-item img {
+    width: 85px;
+  }
+
+  .footer__instagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
